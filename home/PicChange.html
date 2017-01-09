@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+    
+$(document).ready(function(){
+
+    $("img").mouseenter(function(){
+        $("#change").animate({
+            //left: '250px',
+            //opacity: '0.5',
+            height: '500px',
+            width: '500px'
+        });
+    });
+});
+    
+    $(document).ready(function(){
+    $("img").mouseleave(function(){
+        $("#change").animate({
+            //left: '250px',
+            //opacity: '0.5',
+            height: '200px',
+            width: '200px'
+        });
+    });
+});
+</script> 
+</head>
+<body>
+
+
+<p>The img resize event is fired, the moment your mouse is enter or leave the pic.</p>
+<img id="change" src="../food3.jpg" class="img-responsive" alt="image"> 
+<!--div src="../food3.jpg"  alt="image">HELLO</div-->
+
+</body>
+</html>
+
